@@ -1,0 +1,205 @@
+/* General*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: italic;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #8A817C;
+    color: #131010;
+    line-height: 1.6;
+    font-style: italic;
+}
+
+/* Container */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #463F3A;
+    color: #F4F3EE;
+    padding: 20px 0;
+    font-family: lato;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    border: 3px solid #F4F3EE;
+}
+
+.profile-info {
+    text-align: left;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+}
+
+header h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #ddd;
+}
+
+/* Section Styling */
+main {
+    margin-top: 20px;
+    background-color: #BCB8B1;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+/* List Styles */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+/* Link Styling */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Skills Section */
+.skills-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.skills-list li {
+    padding: 10px;
+    background-color: #8A817C;
+    color: #F4F3EE;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#toggleSkills, #toggleExperience, #togglePersonalInfo, #toggleEducation,#toggleProjects {
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #463F3A;
+    color: #BCB8B1;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+#toggleSkills:hover, #toggleExperience:hover, #togglePersonalInfo:hover, #toggleEducation:hover, #toggleProjects:hover {
+    background-color: #8A817C;
+    color: #F4F3EE;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    background-color: #463F3A;
+    color: #F4F3EE;
+    font-size: 1.1rem;
+    font-family: lato;
+}
+
+/* Media Queries for responsiveness */
+
+/* For tablets and smaller devices (width less than 768px) */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header h2 {
+        font-size: 1.2rem;
+    }
+
+    .profile-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin: 0 auto 15px auto;
+    }
+
+    .skills-list {
+        flex-direction: column;
+    }
+
+    #toggleSkills, #toggleExperience, #togglePersonalInfo, #toggleEducation, #toggleProjects {
+        width: 100%;
+    }
+}
+
+/* For mobile devices (width less than 480px) */
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    header h2 {
+        font-size: 1rem;
+    }
+
+    body {
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 10px;
+    }
+
+    .skills-list li {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    #toggleSkills, #toggleExperience, #togglePersonalInfo, #toggleEducation, #toggleProjects {
+        font-size: 0.9rem;
+    }
+}
