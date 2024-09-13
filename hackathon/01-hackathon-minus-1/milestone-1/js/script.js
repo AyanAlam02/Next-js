@@ -1,5 +1,4 @@
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
 // Get the sections and buttons by their IDs
 const skillsSection = document.getElementById('skills');
 const experienceSection = document.getElementById('experience');
@@ -15,7 +14,7 @@ const toggleEducationBtn = document.getElementById('toggleEducation');
 const sections = [skillsSection, experienceSection, personalInfoSection, educationSection, projectsSection];
 sections.forEach(section => {
     if (!section.style.display) {
-        section.style.display = 'block'; // or 'none', based on your preference
+        section.style.display = 'block'; // show all sections by default
     }
 });
 // Function to toggle visibility of a section
