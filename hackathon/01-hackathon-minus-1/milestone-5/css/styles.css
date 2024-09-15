@@ -88,6 +88,30 @@ h2 {
   line-height: 1.6;
 }
 
+#resumeActions {
+  margin-top: 20px;
+}
+
+#resumeActions button {
+  margin-right: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#shareLinkContainer {
+  margin-top: 10px;
+}
+
+#shareLink {
+  color: #000000;
+  text-decoration: none;
+}
+
+#shareLink:hover {
+  text-decoration: underline;
+}
+
 footer {
   text-align: center;
   padding: 20px 0;
@@ -129,6 +153,24 @@ footer {
     font-size: 1.5rem;
   }
 
+  #resumeActions {
+    margin-top: 15px;
+  }
+
+  #resumeActions button {
+    margin-right: 5px;
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  #shareLinkContainer {
+    margin-top: 8px;
+  }
+
+  #shareLink {
+    font-size: 14px;
+  }
+
   footer {
     font-size: 1rem;
   }
@@ -164,6 +206,24 @@ footer {
     font-size: 1.75rem;
   }
 
+  #resumeActions {
+    margin-top: 18px;
+  }
+
+  #resumeActions button {
+    margin-right: 8px;
+    padding: 9px 18px;
+    font-size: 15px;
+  }
+
+  #shareLinkContainer {
+    margin-top: 9px;
+  }
+
+  #shareLink {
+    font-size: 15px;
+  }
+
   footer {
     font-size: 1.05rem;
   }
@@ -190,6 +250,24 @@ footer {
 
   h2 {
     font-size: 2rem;
+  }
+
+  #resumeActions {
+    margin-top: 20px;
+  }
+
+  #resumeActions button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+
+  #shareLinkContainer {
+    margin-top: 10px;
+  }
+
+  #shareLink {
+    font-size: 16px;
   }
 
   footer {

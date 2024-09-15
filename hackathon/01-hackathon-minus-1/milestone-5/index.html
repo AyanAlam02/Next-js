@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dynamic Resume Builder (With Editable And Downloadable Resume)</title>
+    <title>
+      Dynamic Resume Builder (With Editable, Downloadable And Sharable Resume)
+    </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
@@ -49,6 +52,13 @@
       <section id="resumeOutput" class="hidden">
         <h2>Resume</h2>
         <div id="resumeContent"></div>
+        <div id="resumeActions" class="hidden">
+          <button id="shareButton">Share Resume</button>
+          <button id="downloadButton">Download as PDF</button>
+          <p id="shareLinkContainer" class="hidden">
+            Shareable link: <a id="shareLink" href="#" target="_blank"></a>
+          </p>
+        </div>
       </section>
     </main>
     <footer>
